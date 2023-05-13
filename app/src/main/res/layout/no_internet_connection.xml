@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/img_noInternet"
+        android:layout_width="@dimen/containerD"
+        android:layout_height="@dimen/containerD"
+        android:layout_marginStart="66.69dp"
+        android:layout_marginTop="188.69dp"
+        android:background="@drawable/container"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_black"
+        android:fontFamily="@font/regular"
+        android:text="@string/no_internet_connection"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginTop="22.14dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="200dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/notosans"
+        android:backgroundTint="@color/light_red"
+        android:layout_marginStart="40dp"
+        android:text="@string/try_again"/>
+
+
+
+
+</LinearLayout>
