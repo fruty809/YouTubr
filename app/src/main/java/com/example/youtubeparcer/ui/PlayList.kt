@@ -9,6 +9,7 @@ import com.example.youtubeparcer.base.BaseActivity
 import com.example.youtubeparcer.core.network.connection.Connection
 import com.example.youtubeparcer.core.network.result.Status
 import com.example.youtubeparcer.data.model.Item
+import com.example.youtubeparcer.ui.details.DetailsActivity
 
 
 class PlayLists() : BaseActivity<ActivityMainBinding, PlayListViewModel>() {
@@ -71,7 +72,7 @@ class PlayLists() : BaseActivity<ActivityMainBinding, PlayListViewModel>() {
     }
 
     private fun onClick(item: Item){
-        val intent = Intent(this@PlayLists, Det ailsActivity ::class.java)
+        val intent = Intent(this@PlayLists, DetailsActivity ::class.java)
         intent.putExtra(TITLE, item.snippet.title)
         intent.putExtra(ID, item.id)
         intent.putExtra(DESC, item.snippet.description)
