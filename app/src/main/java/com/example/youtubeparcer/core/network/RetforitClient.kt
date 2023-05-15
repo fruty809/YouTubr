@@ -21,7 +21,7 @@ class RetrofitClient {
                 .addInterceptor(interceptor)
                 .build()
 
-            val retrofit = Retrofit.Builder().baseUrl(com.example.youtubeparcer.BuildConfig.BASE_URL).addConverterFactory(
+            val retrofit = Retrofit.Builder().baseUrl(com.example.yotubepracer.BuildConfig.BASE_URL).addConverterFactory(
                 GsonConverterFactory.create())
                 .client(okHttpClient)
                 .build()

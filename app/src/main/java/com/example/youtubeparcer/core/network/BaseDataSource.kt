@@ -1,11 +1,8 @@
 package com.example.youtubeparcer.core.network
 
-
 import com.example.youtubeparcer.core.network.result.Resource
 import retrofit2.Response
-import retrofit2.Response.error
-import retrofit2.Response.success
-import kotlin.Result.Companion.success
+
 
 abstract class BaseDataSource {
     protected suspend fun <T> getResult(call: suspend () -> Response<T>): Resource<T> {

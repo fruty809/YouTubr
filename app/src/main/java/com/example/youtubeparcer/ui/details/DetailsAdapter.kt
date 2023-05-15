@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.yotubepracer.databinding.VideosItemBinding
 import com.example.youtubeparcer.core.ext.setImage
 
+
 class DetailsAdapter: RecyclerView.Adapter<DetailsAdapter.DetailViewHolder> (){
     private val items = arrayListOf<com.example.youtubeparcer.data.model.Item>()
 

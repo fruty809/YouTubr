@@ -4,9 +4,10 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.yotubepracer.databinding.PlaylistItemBinding
 import com.example.youtubeparcer.core.ext.setImage
 import com.example.youtubeparcer.data.model.Item
-import com.example.youtubeparcer.databinding.PlaylistItemBinding
+
 
 class PlayListsAdapter(private val onClick: (Item) -> Unit): RecyclerView.Adapter<PlayListsAdapter.PlayListViewHolder>() {
 

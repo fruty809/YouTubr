@@ -9,6 +9,7 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.lifecycle.LiveData
 
+
 class Connection(private val manager: ConnectivityManager): LiveData<Boolean>() {
     constructor(application: Application):this(
         application.getSystemService(Context.CONNECTIVITY_SERVICE)as ConnectivityManager

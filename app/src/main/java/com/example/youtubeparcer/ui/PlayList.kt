@@ -71,7 +71,7 @@ class PlayLists() : BaseActivity<ActivityMainBinding, PlayListViewModel>() {
     }
 
     private fun onClick(item: Item){
-        val intent = Intent(this@PlayLists, Det ailsActivity::class.java)
+        val intent = Intent(this@PlayLists, Det ailsActivity ::class.java)
         intent.putExtra(TITLE, item.snippet.title)
         intent.putExtra(ID, item.id)
         intent.putExtra(DESC, item.snippet.description)
